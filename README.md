@@ -8,6 +8,8 @@ Research test case: Gollwitzer et al. (2024), [hydrocephalus prediction](https:/
 
 These are three separate experiments, not three versions of the same result. The Google Colab files and the Git copies are separate files; editing one does not automatically update the other. The Google Colab column uses the filename verified at each link.
 
+Access note: the three Colab files were owner-only when checked on 17 October 2026. Sharing the research document does not grant access to these linked files; a collaborator needs a separate file permission.
+
 | Purpose | Notebook in this repository | Google Colab | Recorded result |
 | --- | --- | --- | --- |
 | **Main EpiModel experiment:** infer a computational plan and dependencies from the paper's Methods text | [`notebooks/epimodel_colab.ipynb`](notebooks/epimodel_colab.ipynb) | [`epimodel_colab.ipynb` (EpiModel prototype)](https://colab.research.google.com/drive/1S-5isOKOGy2JrynPYqCS7Ip7YWDvh7QI) | [`results/epimodel_R01_llama3.1-8b.json`](results/epimodel_R01_llama3.1-8b.json) |
