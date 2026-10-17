@@ -1,0 +1,99 @@
+{
+  "model": "llama3.1-8b",
+  "plan": {
+    "research_task": "Predict chronic shunt-dependent hydrocephalus in patients with spontaneous subarachnoid hemorrhage using machine learning classifiers.",
+    "data": {
+      "unit": "",
+      "n_records": 510,
+      "target": "chronic shunt-dependent hydrocephalus",
+      "features": [
+        "age at diagnosis",
+        "sex",
+        "Hunt & Hess grading",
+        "Fisher grading",
+        "central nervous system (CNS) infection",
+        "aneurysm characteristics",
+        "treatment methods"
+      ],
+      "format_hint": "medical records"
+    },
+    "preprocessing": [
+      "one-hot encoding",
+      "standardization by centering and scaling to unit variance",
+      "categorical variables transformation"
+    ],
+    "models": [
+      "decision trees",
+      "random forests",
+      "gradient boosting trees",
+      "logistic regression",
+      "support vector machines (linear and nonlinear)",
+      "k-nearest neighbors (KNN)"
+    ],
+    "validation": "repeated cross-validation (CV) with 10 folds and 10 repetitions",
+    "metrics": [
+      "positive predictive value or precision",
+      "negative predictive value (NPV)",
+      "area under the receiver operating characteristic curve (AUC-ROC)",
+      "area under the precision-recall curve (AUC-PR)",
+      "balanced accuracy",
+      "sensitivity",
+      "specificity"
+    ],
+    "software_mentioned": [
+      "IBM SPSS Statistics 28.0",
+      "Python 3.11",
+      "Scikit-learn",
+      "NumPy",
+      "Pandas",
+      "Gradio"
+    ],
+    "not_specified": []
+  },
+  "environment": {
+    "python_version": "3.11",
+    "packages": [
+      {
+        "name": "scikit-learn",
+        "purpose": "machine learning classifiers",
+        "evidence": "stated"
+      },
+      {
+        "name": "numpy",
+        "purpose": "data processing and analysis",
+        "evidence": "inferred"
+      },
+      {
+        "name": "pandas",
+        "purpose": "data manipulation and analysis",
+        "evidence": "inferred"
+      },
+      {
+        "name": "gradio",
+        "purpose": "interactive web interface for model predictions",
+        "evidence": "stated"
+      }
+    ],
+    "open_questions": [
+      "What is the specific version of IBM SPSS Statistics used for statistical analysis?",
+      "What is the specific version of the Creative Commons Attribution (CC BY) license used for the dataset?",
+      "What is the specific version of the Massachusetts Institute of Technology license used for the code?"
+    ]
+  },
+  "evaluation": {
+    "required_packages_found": "3/5",
+    "found": {
+      "numpy": "inferred",
+      "pandas": "inferred",
+      "scikit-learn": "stated"
+    },
+    "missed": [
+      "imbalanced-learn",
+      "xgboost"
+    ],
+    "extra_not_in_code": [],
+    "python_version_ok": true,
+    "missing_value_handling_flagged_as_question": false,
+    "note": "xgboost is expected to be missed: the paper never names it (code-only dependency)."
+  }
+}

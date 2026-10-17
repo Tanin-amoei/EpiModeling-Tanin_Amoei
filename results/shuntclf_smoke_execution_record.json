@@ -1,0 +1,35 @@
+{
+  "record_type": "smoke_test_execution_record",
+  "recorded_from": "Downloaded Colab result JSON and saved Colab notebook output",
+  "repository": "https://github.com/RISCSoftware/shuntclf",
+  "repository_commit": "1c0ef7020fd2437dc54bc685d8c178b452988ec9",
+  "repository_commit_evidence": "Executed setup cell in saved shuntclf_colab_smoke.ipynb prints this commit",
+  "result": {
+    "status": "smoke_test_completed",
+    "python": "3.11.17",
+    "versions": {
+      "numpy": "1.26.1",
+      "pandas": "2.1.1",
+      "scikit-learn": "1.4.1.post1",
+      "imbalanced-learn": "0.12.0",
+      "xgboost": "2.0.3"
+    },
+    "patients": 510,
+    "processed_features": 13,
+    "target_counts": {
+      "0": 436,
+      "1": 74
+    },
+    "model": "logistic_regression",
+    "outer_folds": 2,
+    "inner_folds": 2,
+    "metrics_mean": {
+      "test_auroc": 0.7945697991569551,
+      "test_auprc": 0.4087509045463902,
+      "test_f1": 0.4576599870717518,
+      "test_balanced_accuracy": 0.749814034217704
+    },
+    "interpretation": "Environment smoke test only; not comparable with published repeated-CV metrics."
+  },
+  "scope_note": "Two outer and two inner folds, logistic regression only. Not a reproduction of published results."
+}

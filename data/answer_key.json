@@ -1,0 +1,23 @@
+{
+  "_about": "Reference answer derived from the released code (github.com/RISCSoftware/shuntclf), checked 17 Oct 2026. Used only to evaluate agent output; never shown to the agents.",
+  "python_version": "3.11",
+  "packages_required": {
+    "scikit-learn": "models, scaling, one-hot encoding, cross-validation, metrics",
+    "numpy": "numerical arrays",
+    "pandas": "tabular data",
+    "imbalanced-learn": "SMOTE for the KNN pipeline",
+    "xgboost": "XGBClassifier (runs in the gradient-boosting slot in main.py)"
+  },
+  "packages_optional": {
+    "scipy": "confidence intervals in main.py",
+    "matplotlib": "PR/ROC plots",
+    "seaborn": "plots",
+    "gradio": "web app only"
+  },
+  "models": ["decision tree", "random forest", "gradient boosting", "logistic regression", "linear svm", "nonlinear svm", "knn"],
+  "preprocessing": ["one-hot encoding", "standard scaling", "class weights", "smote", "missing value handling"],
+  "validation": "nested cross-validation; outer 10 folds x 10 repeats; inner 10 folds; grid or random search",
+  "metrics": ["precision", "npv", "auc-roc", "auc-pr", "balanced accuracy", "sensitivity", "specificity", "f1"],
+  "not_in_text_should_be_asked": ["missing value handling", "xgboost vs sklearn gradient boosting", "inner cv folds / search iterations"],
+  "out_of_scope": {"spss": "descriptive statistics only, done outside the released code"}
+}
