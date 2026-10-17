@@ -6,13 +6,13 @@ Research test case: Gollwitzer et al. (2024), [hydrocephalus prediction](https:/
 
 ## Which notebook is which?
 
-These are three separate experiments, not three versions of the same result. The Google Colab files and the Git copies are separate files; editing one does not automatically update the other.
+These are three separate experiments, not three versions of the same result. The Google Colab files and the Git copies are separate files; editing one does not automatically update the other. The Colab links below use Tanin's notebook labels; the Git copies use descriptive filenames. Identify each experiment by its content and run record, not by filename alone.
 
 | Purpose | Notebook in this repository | Google Colab | Recorded result |
 | --- | --- | --- | --- |
-| **Main EpiModel experiment:** infer a computational plan and dependencies from the paper's Methods text | [`notebooks/epimodel_colab.ipynb`](notebooks/epimodel_colab.ipynb) | [EpiModel Colab](https://colab.research.google.com/drive/1S-5isOKOGy2JrynPYqCS7Ip7YWDvh7QI) | [`results/epimodel_R01_llama3.1-8b.json`](results/epimodel_R01_llama3.1-8b.json) |
-| **Initial feasibility check:** run the authors' code with reduced validation | [`notebooks/shuntclf_colab_smoke.ipynb`](notebooks/shuntclf_colab_smoke.ipynb) | [Tanin's original smoke-test Colab](https://colab.research.google.com/drive/1ylqXbB2C2G8fRi0nsYij3YDUwu8xwLjs) | [`results/shuntclf_smoke_execution_record.json`](results/shuntclf_smoke_execution_record.json) |
-| **Closer reference check:** run the authors' logistic-regression code with its original validation settings | [`notebooks/shuntclf_logistic_original_cv.ipynb`](notebooks/shuntclf_logistic_original_cv.ipynb) | [Original-CV Colab](https://colab.research.google.com/drive/1Z2IR9LAW9eVXyIgyJ89RaV4pLl_9ZoRo) | [`results/shuntclf_logistic_original_cv_results.json`](results/shuntclf_logistic_original_cv_results.json) |
+| **Main EpiModel experiment:** infer a computational plan and dependencies from the paper's Methods text | [`notebooks/epimodel_colab.ipynb`](notebooks/epimodel_colab.ipynb) | [`shuntclf-Claude.ipynb` (EpiModel prototype)](https://colab.research.google.com/drive/1S-5isOKOGy2JrynPYqCS7Ip7YWDvh7QI) | [`results/epimodel_R01_llama3.1-8b.json`](results/epimodel_R01_llama3.1-8b.json) |
+| **Initial feasibility check:** run the authors' code with reduced validation | [`notebooks/shuntclf_colab_smoke.ipynb`](notebooks/shuntclf_colab_smoke.ipynb) | [`shuntclf_colab_smoke.ipynb` (initial smoke test)](https://colab.research.google.com/drive/1ylqXbB2C2G8fRi0nsYij3YDUwu8xwLjs) | [`results/shuntclf_smoke_execution_record.json`](results/shuntclf_smoke_execution_record.json) |
+| **Closer reference check:** run the authors' logistic-regression code with its original validation settings | [`notebooks/shuntclf_logistic_original_cv.ipynb`](notebooks/shuntclf_logistic_original_cv.ipynb) | [`shuntclf.ipynb` (original-CV run)](https://colab.research.google.com/drive/1Z2IR9LAW9eVXyIgyJ89RaV4pLl_9ZoRo) | [`results/shuntclf_logistic_original_cv_results.json`](results/shuntclf_logistic_original_cv_results.json) |
 
 Start with the **main EpiModel notebook** to inspect the prototype. The other two notebooks establish what can be run from the published study; they are reference executions, not outputs of the EpiModel agents.
 
